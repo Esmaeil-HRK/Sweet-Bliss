@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎂 Sweet Bliss Bakery</title>
+    <link href="bootstrap-4.0.0-dist/css/bootstrap.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="header-container">
+      <!-- Header section with logo and site name -->
+      <header class="header py-3">
+        <div class="container d-flex align-items-center">
+          <img
+            src="images/logo.jpeg"
+            alt="Sweet Bliss Bakery Logo"
+            class="logo"
+          />
+          <h1>Sweet Bliss Bakery</h1>
+        </div>
+      </header>
+
+      <!-- Navigation bar -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#home">Sweet Bliss Bakery</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Button to open the sidebar -->
+    <button class="open-sidebar-btn" onclick="toggleSidebar()">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- Sidebar -->
+    <div id="sidebar" class="sidebar">
+      <button class="close-sidebar-btn" onclick="toggleSidebar()"></button>
+      <h3 style="color: #f8b195">Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <h3>Categories</h3>
+      <ul>
+        <li><a href="#">Cakes</a></li>
+        <li><a href="#">Pastries</a></li>
+        <li><a href="#">Bread</a></li>
+        <li><a href="#">Custom Orders</a></li>
+      </ul>
+    </div>
+
+    <!-- Main content area -->
+    <main class="container main-content">
+      <!-- Home Section -->
+      <section id="home" class="main-section">
+        <h2>Welcome to Sweet Bliss Bakery!</h2>
+        <p>
+          Enjoy our delicious cakes and pastries made with love and the finest
+          ingredients. Our bakery is dedicated to creating delightful and
+          memorable experiences for all our customers.
+        </p>
+        <img
+          src="images/store.jpeg"
+          alt="Sweet Bliss Bakery Store"
+          class="img-fluid mb-4 store-image"
+        />
+        <div class="row">
+          <div class="col-md-4 product">
+            <h3>Chocolate Cake</h3>
+            <img src="images/chocolate-cake.jpeg" alt="Chocolate Cake" />
+            <p>
+              $30
+              <a href="#" class="add-to-cart"
+                ><i class="fas fa-cart-plus"></i
+              ></a>
+            </p>
+          </div>
+          <div class="col-md-4 product">
+            <h3>Vanilla Cake</h3>
+            <img src="images/vanilla-cake.jpeg" alt="Vanilla Cake" />
+            <p>
+              $25
+              <a href="#" class="add-to-cart"
+                ><i class="fas fa-cart-plus"></i
+              ></a>
+            </p>
+          </div>
+          <div class="col-md-4 product">
+            <h3>Red Velvet Cake</h3>
+            <img src="images/red-velvet-cake.jpeg" alt="Red Velvet Cake" />
+            <p>
+              $35
+              <a href="#" class="add-to-cart"
+                ><i class="fas fa-cart-plus"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 product">
+            <h3>Cheesecake</h3>
+            <img src="images/cheesecake.jpeg" alt="Cheesecake" />
+            <p>
+              $40
+              <a href="#" class="add-to-cart"
+                ><i class="fas fa-cart-plus"></i
+              ></a>
+            </p>
+          </div>
+          <div class="col-md-4 product">
+            <h3>Strawberry Cake</h3>
+            <img src="images/strawberry-cake.jpeg" alt="Strawberry Cake" />
+            <p>
+              $30
+              <a href="#" class="add-to-cart"
+                ><i class="fas fa-cart-plus"></i
+              ></a>
+            </p>
+          </div>
+          <div class="col-md-4 product">
+            <h3>Lemon Cake</h3>
+            <img src="images/lemon-cake.jpeg" alt="Lemon Cake" />
+            <p>
+              $28
+              <a href="#" class="add-to-cart"
+                ><i class="fas fa-cart-plus"></i
+              ></a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="main-section">
+        <h2>About Us</h2>
+        <p>
+          Sweet Bliss Bakery was founded in 2024 with the mission to create
+          delightful and delicious cakes for all occasions. We use only the
+          highest quality ingredients and bake with love and passion. Our team
+          of skilled bakers is dedicated to bringing your cake dreams to life.
+        </p>
+        <p>
+          At Sweet Bliss Bakery, we believe that every cake should be as unique
+          and special as the celebration it is made for. From classic flavors to
+          innovative designs, we strive to exceed your expectations and make
+          your moments sweeter.
+        </p>
+        <img
+          src="images/about-us.jpeg"
+          alt="About Sweet Bliss Bakery"
+          class="img-fluid"
+        />
+      </section>
+
+      <!-- Services Section -->
+      <section id="services" class="main-section">
+        <h2>Our Services</h2>
+        <p>We offer a range of services to meet your cake needs:</p>
+        <ul>
+          <li>
+            Custom cake design for weddings, birthdays, and other special
+            occasions
+          </li>
+          <li>Daily fresh baked cakes and pastries</li>
+        </ul>
+        <div class="row">
+          <div class="col-md-6 service-text">
+            <h3>Custom Cake Design</h3>
+            <img
+              src="images/custom-cake.jpeg"
+              alt="Custom Cake Design"
+              class="img-fluid"
+            />
+            <p>
+              Our custom cake design service allows you to create the cake of
+              your dreams. We'll work with you to design a cake that reflects
+              your vision and tastes as good as it looks.
+            </p>
+          </div>
+          <div class="col-md-6 service-text">
+            <h3>Fresh Baked Goods</h3>
+            <img
+              src="images/daily-baked.jpeg"
+              alt="Daily Fresh Baked Goods"
+              class="img-fluid"
+            />
+            <p>
+              Every day, we bake a variety of cakes, pastries, and other treats
+              using the freshest ingredients. Visit our store to enjoy a sweet
+              treat.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="main-section">
+        <h2>Contact Us</h2>
+        <p>
+          If you have any questions or would like to place an order, please
+          contact us:
+        </p>
+        <p>
+          Email:
+          <a href="mailto:info@sweetblissbakery.com"
+            >info@sweetblissbakery.com</a
+          >
+        </p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Address: 123 Cake Street, Sweet City, CA 12345</p>
+        <img
+          src="images/contact-us.jpeg"
+          alt="Contact Sweet Bliss Bakery"
+          class="img-fluid"
+        />
+        <p>Follow us on social media for the latest updates and promotions:</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/" title="Facebook"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://www.instagram.com/" title="Instagram"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://x.com/?lang=en" title="Twitter"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer class="footer">
+      <p>&copy; 2024 Sweet Bliss Bakery. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap and jQuery scripts -->
+    <script src="bootstrap-4.0.0-dist/js/jquery-3.7.1.min.js"></script>
+    <script src="bootstrap-4.0.0-dist/js/popper.min.js"></script>
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.js"></script>
+    <script src="scripts.js"></script>
+  </body>
+</html>
